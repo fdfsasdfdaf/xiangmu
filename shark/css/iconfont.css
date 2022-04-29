@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('./iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gengduo:before {
+  content: "\e620";
+}
+
+.icon-wode:before {
+  content: "\e8a0";
+}
+
+.icon-gouwuche:before {
+  content: "\e70b";
+}
+

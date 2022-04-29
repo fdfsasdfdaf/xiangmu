@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "傻逼东西",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "我是你爹",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

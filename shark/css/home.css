@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+img {
+    display: block;
+}
+
+.type {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: relative;
+    z-index: 6;
+}
+
+.logo {
+    float: left;
+    clear: both;
+}
+
+
+.logo-img {
+    width: 26px;
+    height: 60px;
+    background: url(../img/log.png) center no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.head div span {
+    margin-left: 8px;
+    color: #00c65e;
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.nav {
+    float: left;
+    margin-left: 175px;
+    line-height: 60px;
+}
+
+.nav ul li {
+    float: left;
+    padding: 0 35px;
+}
+
+.nav ul li:nth-child(1) a {
+    color: #00c65e;
+}
+
+.nav ul li a {
+    color: #fff;
+}
+
+.nav ul li a:hover {
+    color: #00c65e;
+}
+
+.head .type .search {
+    width: 200px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.search div {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(220, 225, 228, .2);
+}
+
+.search div input {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background: 0 0;
+    outline: 0;
+    border: none;
+    padding-left: 15px;
+    padding-right: 35px;
+    font-size: 14px;
+    color: rgba(225, 225, 225, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.search div a img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+.head .type .person {
+    float: right;
+    line-height: 60px;
+
+}
+
+.person ul li {
+    width: 16px;
+    height: 8px;
+    list-style: none;
+    float: left;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.person ul li a {
+    color: #fff;
+}
+
+.slideshow{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    top: -60px;
+  }
+
+  .slideshow ul li {
+    height: 500px;
+    /* 看不见图片 */
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    transition: opacity 1.5s;
+  }
+
+  .slideshow ul li.ac {
+    z-index: 5;
+    opacity: 1;
+  }
+
+  .slideshow ol {
+    position: absolute;
+    right: 43%;
+    bottom: 10px;
+    z-index: 6;
+  }
+
+  .slideshow ol li {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin-left: 5px;
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 100%;
+  }
+
+  .slideshow ol li.ac {
+    background: #00c65e;
+   
+  }
+  #goPrev {
+    left: 0;
+    opacity: 0;
+  }
+
+  #goNext {
+    right: 0;
+    opacity: 0;
+  }
+
+  .slideshow>a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+    width: 40px;
+    font-size: 40px;
+    vertical-align: middle;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 6;
+  }
