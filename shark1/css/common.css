@@ -1,0 +1,237 @@
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #000;
+}
+
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo_img {
+    width: 26px;
+    height: 60px;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.logo_name {
+    color: #00c65e;
+    margin-left: 8px;
+    line-height: 60px;
+    vertical-align: middle;
+    font-size: 14px;
+    float: left;
+}
+
+.menu-list-col {
+    float: left;
+    margin-left: 175px;
+}
+
+.menu-list-col ul {
+    width: 420px;
+    height: 60px;
+}
+
+.menu-list-col ul li {
+    float: left;
+    padding: 0 35px;
+    cursor: pointer;
+    line-height: 60px;
+    font-size: 14px;
+}
+
+.menu-list-col ul li.active a,
+.menu-list-col ul li:hover a {
+    color: #00c65e;
+}
+
+.menu-list-col ul li:hover a {
+    transition-duration: .4s;
+}
+
+.menu-list-col ul li a {
+    color: rgb(202, 206, 209);
+}
+
+.userCenter-list-col {
+    width: 77px;
+    height: 60px;
+    line-height: 45px;
+    float: right;
+}
+
+.icon-user {
+    font-size: 18px !important;
+    color: rgb(202, 206, 209);
+    display: block;
+    float: left;
+    margin-top: 12px;
+    margin-right: 28px;
+}
+
+.icon-cart {
+    font-size: 28px !important;
+    color: rgb(202, 206, 209);
+    display: block;
+    float: right;
+    margin-top: 12px;
+    /* margin-left: 28px; */
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.content-center-md {
+    width: 1074px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    width: 100%;
+    border-bottom: 1px solid #E7E7E7;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.footer-banner {
+    width: 100%;
+}
+
+.footer-banner li {
+    width: 33.3333333333%;
+    list-style: none;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-banner li i.iconfont {
+    font-size: 38px;
+    margin: auto;
+    display: block;
+    float: none;
+    color: aquamarine;
+}
+
+.footer-col dl {
+    text-align: left;
+    margin: 40px 150px;
+    display: inline-block;
+}
+
+.footer-col dl dt {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.footer-col dl dd {
+    font-size: 12px;
+    color: #999;
+    margin-top: 7px;
+}
+
+.footer-col dl dd a:active a,
+.footer-col dl dd a:hover a,
+.footer-col dl dd a:link a,
+.footer-col dl dd a:visited a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.footer-col dl dd.phone {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-col dl dd {
+    font-size: 12px;
+    color: #999;
+    margin-top: 7px;
+}
+
+.copyright {
+    float: left;
+    margin: 20px 13% 20px 0;
+}
+
+.attention,
+.copyright {
+    font-size: 12px;
+    color: #999;
+}
+
+.attention {
+    float: right;
+    margin: 20px 0;
+}
+
+.attention a:active,
+.attention a:link,
+.attention a:visited {
+    text-decoration: none;
+    color: #999;
+    vertical-align: middle;
+}
+
+.attention a i {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.qrcode {
+    width: 234px;
+    height: 108px;
+    border: 1px solid #E7E7E7;
+    position: absolute;
+    top: -112px;
+    right: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.qrcode-txt {
+    width: 140px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.qrcode-txt .main-title {
+    font-size: 14px;
+    color: #333;
+    margin-top: 34px;
+}
+
+.qrcode-txt .sub-title {
+    font-size: 12px;
+    color: #999;
+    margin-top: 2px;
+}
+
+.qrcode-img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 14px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.last {
+    border-bottom: 0;
+}
+
+.icon-weixin:hover .qrcode {
+    opacity: 1;
+}

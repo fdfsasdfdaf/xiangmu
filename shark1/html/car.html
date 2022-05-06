@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont1.css">
+    <link rel="stylesheet" href="../css/car.css">
+</head>
+
+<body>
+    <header>
+        <div class="content_center center">
+            <a href="../html/Home.html" class="logo">
+                <div class="logo_img"></div>
+                <span class="logo_name">黑鲨商城</span>
+            </a>
+            <nav class="menu-list-col">
+                <ul>
+                    <li class="active">
+                        <a href="../html/Home.html">商城</a>
+                    </li>
+                    <li>
+                        <a href="#">以旧换新</a>
+                    </li>
+                    <li>
+                        <a href="#">服务</a>
+                    </li>
+                    <li>
+                        <a href="#">社区</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="userCenter-list-col">
+                <ul>
+                    <li>
+                        <a href="login.html">
+                            <i class="iconfont icon-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="car.html">
+                            <i class="iconfont icon-cart cart1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <article class="cart">
+            <div class="content-center">
+                <div class="block" id="cartFull">
+                    <div class="cart-top">
+                        <p class="title">我的购物车</p>
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="t-1" width="188">
+                                        <input type="checkbox" id="select-all" value="1" checked name="pro-select"
+                                            style="display: none;">
+                                        <label for="select-all" class="checkboxCol">
+                                            <div  class="icon-select-col icon-select-col1">
+                                                <input type="checkbox">
+                                                
+                                            </div>
+                                            <span>全选</span>
+                                        </label>
+
+                                    </th>
+                                    <th class="t-1" width="316" colspan="2">商品名称</th>
+                                    <th width="134">数量</th>
+                                    <th width="134">单价</th>
+                                    <th width="134">状态</th>
+                                    <th width="134">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody class="car-list1">
+                                <!-- <tr class="car-list">
+                                    <td class="t-l" width="188">
+                                        <input type="checkbox" id="select-0" value="1" checked name="sex"
+                                            data-skusn="K22032750814_7" data-count="1" data-price="3299"
+                                            style="display: none;">
+                                        <label for="select-0" class="checkboxCol active">
+                                            <div class="icon-select-col">
+                                                <i class="icon-select"></i>
+                                            </div>
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td width="70">
+                                        <div class="img-col">
+                                            <img src="../img/carimg1.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td width="246">
+                                        <p class="pro-name">黑鲨5</p>
+                                        <p class="pro-desc"></p>
+                                    </td>
+                                    <td width="134"></td>
+                                    <td width="134">￥3299</td>
+                                    <td width="134">待付款</td>
+                                    <td width="134"></td>
+                                     
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <p class="note" style="text-align: right; margin-top: 10px; font-size: 13px; color: #666;">
+                            快去结算看看有哪些优惠吧</p>
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="cart-bottom-left">
+                            <a href="../html/Home.html">
+                                <i class="fa iconfont icon-cart"></i>
+                                <span>继续购物</span>
+                            </a>
+                        </div>
+                        <div class="cart-bottom-right">
+                             已选
+                            <span class="total-num" id="count-select">0</span> 件，合计：
+                            <span class="total-price">￥43791</span>
+                            <div class="btn-l btn-green" id="pay">去结算</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" id="cartEmpty" style="display: none; margin-bottom: 120px;">
+                    <p>购物车竟然是空的，快去添加吧</p>
+                    <div class="btn-l btn-green" id="goStore" style="margin-top: 56px;">去商城</div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <div class="footer center">
+        <div class="content-center-md">
+            <div class="footer-col">
+                <ul class="footer-banner">
+                    <li>
+                        <i class="iconfont icon-tui"></i>
+                        <p>7天无理由退货</p>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-15tianwuliyoutuihuo
+                        "></i>
+                        <p>质量问题15天换货</p>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-99yuanbaoyou"></i>
+                        <p>满99元包邮</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <dl>
+                    <dt>相关链接</dt>
+                    <dd>
+                        <a href="javascript:;">黑鲨官网</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">黑鲨论坛</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">黑鲨云服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>黑鲨客服热线</dt>
+                    <dd class="phone">400-015-8899</dd>
+                    <dd>产品咨询、技术支持及相关问题</dd>
+                    <dd>09：00 ~ 24：00</dd>
+                </dl>
+            </div>
+            <div class="footer-col last">
+                <div class="copyright">
+                    赣B2-2020050 | 赣ICP备17012659号 | 赣网文{2019} 0364-006号 | 赣公网安备36010602000042 Copyright 2017-2021
+                    BlackShark 版权所有
+                </div>
+                <div class="attention">
+                    <span>关注我们：</span>
+                    <a href="#" class="wechat">
+                        <i class="iconfont icon-weixin" id="wechat"></i>
+                    </a>
+                    <a href="#" class="weibo">
+                        <i class="iconfont icon-weibo"></i>
+                    </a>
+                </div>
+                <div class="qrcode" id="qrcode" style="display: none;">
+                    <div class="qrcode-txt">
+                        <p class="main-title">用微信扫描</p>
+                        <p class="sub-title">关注黑鲨公众号</p>
+                    </div>
+                    <div class="qrcode-img">
+                        <img src="../img/qrcode.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/car.js"></script>
+ 
+    <script>
+        (function () {
+            var btn = document.getElementById('wechat');
+            var box = document.getElementById('qrcode');
+            box.onmouseover = btn.onmouseover = function () {
+                box.style.display = 'block';
+            }
+            box.onmouseout = btn.onmouseout = function () {
+                box.style.display = 'none';
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
